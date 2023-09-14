@@ -1,0 +1,89 @@
+
+
+============================== 2023-08-23 09:11:03.558038 | f294ce1b-df61-4833-854a-1bea38654658 ==============================
+09:11:03.558038 [info ] [MainThread]: Running with dbt=1.0.1
+09:11:03.558258 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/sara.seylani/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+09:11:03.558348 [debug] [MainThread]: Tracking: tracking
+09:11:03.576266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11987f0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1198a54f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1198a50d0>]}
+09:11:03.810122 [debug] [MainThread]: Executing "git --help"
+09:11:03.827450 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:11:03.827795 [debug] [MainThread]: STDERR: "b''"
+09:11:03.832062 [debug] [MainThread]: Acquiring new snowflake connection "debug"
+09:11:03.832839 [debug] [MainThread]: Using snowflake connection "debug"
+09:11:03.832927 [debug] [MainThread]: On debug: select 1 as id
+09:11:03.833014 [debug] [MainThread]: Opening a new connection, currently in state init
+09:11:05.096389 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.26 seconds
+09:11:05.098175 [debug] [MainThread]: On debug: Close
+09:11:05.456830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3c9820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3ca9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3e90d0>]}
+09:11:05.813586 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-08-29 22:28:09.544943 | 056a479c-d2b0-4dea-b7df-e18167a80a79 ==============================
+22:28:09.544943 [info ] [MainThread]: Running with dbt=1.0.1
+22:28:09.545821 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/sara.seylani/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, compile=True, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, cls=<class 'dbt.task.generate.GenerateTask'>, which='generate', rpc_method='docs.generate')
+22:28:09.545954 [debug] [MainThread]: Tracking: tracking
+22:28:09.546279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc29d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc2970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc2910>]}
+22:28:09.553782 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+22:28:09.553987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '056a479c-d2b0-4dea-b7df-e18167a80a79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b92730>]}
+22:28:09.601105 [debug] [MainThread]: Parsing macros/generate_schemas.sql
+22:28:09.601864 [debug] [MainThread]: Parsing macros/catalog.sql
+22:28:09.603195 [debug] [MainThread]: Parsing macros/adapters.sql
+22:28:09.648103 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+22:28:09.650359 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+22:28:09.653121 [debug] [MainThread]: Parsing macros/materializations/view.sql
+22:28:09.653815 [debug] [MainThread]: Parsing macros/materializations/table.sql
+22:28:09.655372 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+22:28:09.659590 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+22:28:09.660174 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+22:28:09.662000 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+22:28:09.663078 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+22:28:09.663879 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+22:28:09.744558 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+22:28:09.826797 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+22:28:09.899240 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+22:28:09.905626 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+22:28:09.931789 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+22:28:09.936533 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+22:28:09.943197 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+22:28:09.953345 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+22:28:09.960766 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+22:28:09.980309 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+22:28:09.997061 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+22:28:10.003220 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+22:28:10.005262 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+22:28:10.010114 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+22:28:10.011089 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+22:28:10.012502 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+22:28:10.013601 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+22:28:10.016542 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+22:28:10.026006 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+22:28:10.029458 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+22:28:10.030696 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+22:28:10.031694 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+22:28:10.032151 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+22:28:10.032418 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+22:28:10.032755 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+22:28:10.033406 [debug] [MainThread]: Parsing macros/etc/statement.sql
+22:28:10.036504 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+22:28:10.040852 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+22:28:10.041919 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+22:28:10.043176 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+22:28:10.050150 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+22:28:10.051699 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+22:28:10.054427 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+22:28:10.058654 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+22:28:10.063611 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+22:28:10.201477 [debug] [MainThread]: 1699: static parser successfully parsed staging/customers.sql
+22:28:10.207395 [debug] [MainThread]: 1699: static parser successfully parsed staging/transaction_processing_time.sql
+22:28:10.208731 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales.sql
+22:28:10.210274 [debug] [MainThread]: 1699: static parser successfully parsed staging/payment_method.sql
+22:28:10.211708 [debug] [MainThread]: 1699: static parser successfully parsed marts/sales/monthly_sales_summary.sql
+22:28:10.213761 [debug] [MainThread]: 1699: static parser successfully parsed marts/sales/yearly_sales_summary.sql
+22:28:10.215290 [debug] [MainThread]: 1699: static parser successfully parsed marts/sales/daily_sales_summary.sql
+22:28:10.216757 [debug] [MainThread]: 1699: static parser successfully parsed marts/payment_method/payment_method_summary.sql
+22:28:10.218308 [debug] [MainThread]: 1699: static parser successfully parsed marts/operational_efficiency/transactions_per_hour.sql
+22:28:10.219360 [debug] [MainThread]: 1699: static parser successfully parsed marts/operational_efficiency/peak_processing_time_hours.sql
+22:28:10.220633 [debug] [MainThread]: 1699: static parser successfully parsed marts/customer/customer_transaction_summary.sql
+22:28:10.221614 [debug] [MainThread]: 1699: static parser successfully parsed marts/customer/customer_churn_rate.sql
+22:28:10.222941 [debug] [MainThread]: 1699: static parser successfully parsed marts/customer/customer_average_purchase_value.sql
+22:28:10.234736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cd0f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c51c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c512b0>]}

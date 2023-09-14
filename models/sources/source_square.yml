@@ -1,0 +1,13 @@
+
+version: 2
+
+
+sources:
+  - name: square
+    schema: square
+    tables:
+      - name: order
+      - name: order_line_item
+      - name: customer
+      - name: tender
+      
