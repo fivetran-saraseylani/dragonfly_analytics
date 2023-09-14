@@ -1,7 +1,0 @@
-
-target/
-dbt_modules/
-logs/
-.gitignore
-.DS_Store
-dbt_packages/
